@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jaure</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Jaure</h1>
+    <div class="board" id="board"></div>
+    <p id="status">Turno de: X</p>
+    <button id="resetBtn">Reiniciar</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

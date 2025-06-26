@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memorama Jaure Mendoza</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#2196f3" />
+</head>
+<body>
+  <h1>Memorama Jaure Mendoza</h1>
+
+  <div class="stats">
+    <span>⏱ Tiempo: <span id="time">0</span> s</span>
+    <span>🎯 Intentos: <span id="attempts">0</span></span>
+    <button id="resetBtn">🔄 Reiniciar</button>
+  </div>
+
+  <div class="game-board" id="gameBoard"></div>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('serviceWorker.js')
+        .then(() => console.log('Service Worker registrado'))
+        .catch(error => console.error('Error al registrar SW:', error));
+    }
+  </script>
+</body>
+</html>

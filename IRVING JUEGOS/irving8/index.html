@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Buscaminas con Efectos</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Buscaminas</h1>
+
+<div id="controles">
+  <div>⏱ Tiempo: <span id="tiempo">0</span> s</div>
+  <div>🖱 Intentos: <span id="intentos">0</span></div>
+  <button id="reiniciar">Reiniciar</button>
+</div>
+
+<div id="mensaje"></div>
+
+<div id="tablero"></div>
+
+<!-- Sonidos -->
+<audio id="click-sound" src="click.mp3" preload="auto"></audio>
+<audio id="win-sound" src="win.mp3" preload="auto"></audio>
+<audio id="click-sound" src="click.mp3" preload="auto"></audio>
+<audio id="audioLose" src="lose.mp3" preload="auto"></audio>
+<!-- Confeti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
