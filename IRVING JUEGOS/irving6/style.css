@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 4px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.casilla {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 2px solid #333;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fichas {
+  margin: 10px;
+}
+
+.ficha {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #ddd;
+  border: 2px solid #333;
+  font-size: 24px;
+  line-height: 50px;
+  cursor: grab;
+  user-select: none;
+}
